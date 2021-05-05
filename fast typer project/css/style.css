@@ -1,0 +1,166 @@
+/***************************************CSS FOR INDEX.HTML********************************/
+body{
+    /* background-color: #21e6c1; */
+    background-image: linear-gradient(to right, rgb(168, 255, 120), rgb(120, 255, 214));
+    /* background-color: #21e6c1; */
+}
+header{
+    animation: fadeIn 1s ;
+
+}
+@keyframes fadeIn{ /*Fade in for the header*/
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.comment{
+    margin-top: 0px;
+    text-align:center ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.heading{
+    font-size: 90px;
+    text-align: center;
+    font-family:'Gill Sans Ultra Bold';
+    margin-top: 0px; margin-bottom: 0px;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    color: rgba(255, 166, 0, 0.952);
+}
+
+
+main{
+    margin-top: 100px;
+}
+.menu-container{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+}
+.menu{
+    display: inline-block;
+}
+#play-link{
+    text-decoration: none;
+    color: white;
+}
+
+#play,#ins,#levels,#settings,#highScore{
+    font-family: 'Arial Black';
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    background-color: #1f4287;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+
+#play:hover,#ins:hover,#levels:hover,#settings:hover, #highScore:hover{
+    cursor: pointer;
+    background-color:  rgba(5, 59, 221, 0.733);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+/*Instruction modal*/
+.instruction-modal-container,.level-modal-container, .high-score-container{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.925);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    padding-top: 100px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.instruction-modal,.level-modal,.high-score-modal{
+    display: inline-block;
+    width: 500px;
+}
+
+.instruction-modal-head{
+    background-color: #492540;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+.instruction-modal-body{
+    background-color: #f6ea8c;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    height: 350px;
+    overflow-y: auto;
+    padding: 10px;
+    line-height: 35px;
+}
+.close-instruction-button{
+    /* background-color: red; */
+    float: right;
+}
+.close-instruction-button:hover{
+    color: rgba(255, 0, 0, 0.589);
+    cursor: pointer;
+}
+
+.level-modal-head, .high-score-head{
+    font-size: 25px;
+    background-color: #492540;
+    color: white;
+}
+
+.level-modal-body, .high-score-body{
+    height: auto;
+    background-color: #f6ea8c;
+    font-size: 25px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.close-level-button{
+    /* float: right; */
+    font-family: cursive;
+    font-size: 20px;
+    padding-right: 10px;
+    
+}
+#close-level-button:hover{
+    background-color: blue;
+    
+    cursor: pointer;
+}
+
+.tabContainer .buttonContainer button{
+    font-size: 18px;
+    height:30px;
+    border:none;
+    cursor: pointer;
+    margin: 0px;
+    outline: none;
+}
+.tabContainer .buttonContainer button:hover{
+background-color: #d7d4d4;
+}
+
+.tabContainer .tabPanel{
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: none;
+    text-align: center;
+    font-size: 45px;
+}
+
+.version{
+    font-weight: bold;
+    float: right;
+    margin-top: 80px;
+}

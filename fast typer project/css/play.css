@@ -1,0 +1,114 @@
+body {
+  /* background-color: rgb(30, 5, 85) */
+  /* background-color: rgba(43, 195, 241, 0.534); */
+  background-color: #74f8ffc5;
+  /* background-color:#82e85aa6; */
+}
+
+main,footer {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+footer input {
+  margin-top: 250px;
+  height: 50px;
+  width: 600px;
+  text-align: center;
+  font-size: 30px;
+  text-decoration-line: none;
+}
+
+#timeScoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#timer {
+  font-size: 50px;
+  padding: 20px;
+  border-radius: 0.5rem;
+  background-color: rgb(243, 83, 62);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  color: white;
+}
+
+#score {
+  margin-left: 20%;
+  font-size: 50px;
+  background-color: blue;
+  padding: 20px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.692);
+  color: white;
+}
+
+#wordDisplay {
+  font-size: 70px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+#gameOverContainer {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.979);
+}
+
+#gameOverBody {
+  width: 45%;
+  margin-top: 100px;
+  margin-left: 400px;
+  background-color: white;
+  padding: 20px;
+
+}
+
+
+#playAgain{
+  border: 2px solid blue;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 25px;
+  outline: none;
+}
+#playAgain:hover{
+  background-color: rgba(0, 0, 255, 0.74);
+  color: white;
+  cursor: pointer;
+}
+
+#mainMenuBtn button{
+  border: 2px solid green;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 25px;
+  outline: none;
+}
+#mainMenuBtn button:hover{
+  background-color: rgba(0, 128, 0, 0.664);
+  cursor: pointer;
+  color: white;
+}
+#highScoreAlert{
+  display: none;
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.commentTime{
+  font-size: 20px;
+}

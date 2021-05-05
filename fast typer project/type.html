@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FastTyper</title>
+    <link type="text/css" rel="stylesheet" href="css/play.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.css">
+
+</head>
+<body>
+  <!-- <header>
+      <h1 align="center">SpeedTyper</h1>
+  </header> -->
+
+    <main>
+         <!--Game over modal-->
+         <div id="gameOverContainer">
+            <div id="gameOverBody" class="slide-in-top">
+             <span style="color: red; font-size: 60px; font-family:fantasy;">GAME OVER! </span>
+            <p>Difficulty: <span id="gameOverDifficulty"></span> </p>
+             <div id="highScoreAlert"><b>NEW HIGH SCORE!</b></div>
+
+                <p style="font-size:50px ;">
+                    Your score is <br>
+                    <span style="font-size: 50px; color: blue;" id="gameOverScore"></span>
+                </p>
+                <p>
+                    <button id="playAgain">PLAY AGAIN</button>
+                    <a href="fast typer.html" id="mainMenuBtn"><button>Back to main menu</button></a>
+                </p>
+            </div>  
+         </div>
+
+    <!--Timer and Score-->
+           <div id="timeScoreContainer">
+                <span style="font-size: 20px; color: black; ">Timer</span>
+                    <div id="timer"> </div>
+                    <div style="margin-left: 300px;">Difficulty: <span id="commentTime" style="font-weight: bold;"></span> </div> <!--Comment diificulty level-->
+                <div id="score"></div>
+                    <span style="font-size: 20px; color: black; ">Score</span>
+
+                    <!-- <div>Pause</div> Pause button -->
+            </div>
+            
+                    
+            <br> <br>
+           <div id="wordDisplay"></div>
+
+          
+    </main>
+
+    <footer>
+        <input type="text" name="" id="inputWord" autofocus  placeholder="Type here...">
+    </footer>
+
+    <script src="js/type.js"></script>
+    
+</body>
+</html>

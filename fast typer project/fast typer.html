@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FastTyper</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+    <div class="instruction-modal-container">  <!--Instruction modal-->
+        <div class="instruction-modal slide-in-top" >
+            <div class="instruction-modal-head">
+            Instructions <span class="close-instruction-button">X</span>
+
+            </div>
+            <div class="instruction-modal-body">
+                <h3>How to play</h2>
+                One-by-one, a random word will pop-up on your screen and you
+                have to type the word within a given amount of seconds else the game ends. 
+                When you enter the word before the clock gets to 0, the clock wll restart and a new word will display. 
+                Once the clock hits 0, your final score is displayed and it's game over. <br>
+                Enjoy and Keep Typing :-) 
+                
+                <h3>Choose difficulty</h3>
+                <dl>
+                    <b><dt>Easy</dt></b>
+                    <dd>
+                        In this level you have 7 seconds to type the word correctly else the game ends.   
+                    </dd>
+                    <b><dt>Intermediate</dt></b>
+                    <dd>
+                        In this level you have 5 seconds to type the word correctly else the game ends.   
+                    </dd>
+                    <b> <dt>Hard</dt></b>
+                    <dd>
+                        In this level you have 3 seconds to type the word correctly else it's game over.
+                        
+                    </dd>
+                </dl>
+                
+            </div>
+        </div>
+   </div>
+
+   <div class="level-modal-container"> <!--Diificulty modal-->
+        <div class="level-modal slide-in-top" >
+            <div class="level-modal-head">
+            Choose Difficulty
+            </div>
+            <div class="level-modal-body ">
+            Difficulty <select name="Difficulty" id="difficulty" style="font-size: 25px;" > <!--Select difficulty of game-->
+                            <option value="EASY">Easy</option>
+                            <option value="INTERMEDIATE">Intermediate</option>
+                            <option value="HARD">Hard</option>
+                        </select>
+                <br> <br>
+                <center>
+                <button id="close-level-button" >DONE</button>
+                </center>
+            </div>
+        </div> 
+   </div>
+
+   <div class="high-score-container">  <!--High Score modal-->
+        <div class="high-score-modal  slide-in-top" >
+            <div class="high-score-head">
+            High Score
+            </div>
+            <div class="high-score-body">
+
+                <div class="tabContainer"> <!--Tabs for scores for each difficulty-->
+                    <div>
+                        <div class="buttonContainer" >
+                            <button onclick="showPanel(0,'#2196f3')" >EASY</button>
+                            <button onclick="showPanel(1,'#4cac50')">INTERMEDIATE</button>
+                            <button onclick="showPanel(2,'#f44336')">HARD</button>
+                        </div>
+
+                        <div id="easyHighScore" class="tabPanel">0</div>
+                        <div id="intermediateHighScore" class="tabPanel">0</div>
+                        <div id="hardHighScore" class="tabPanel">0</div>
+
+                    </div>
+                </div>
+               
+
+                <center>
+                    <button id="resetBtn">RESET SCORES</button>
+                    <button  id="close-highScore-button" >DONE</button>
+                </center>
+            </div>
+        </div> 
+   </div>
+    <header>
+        <h1 class="heading">TypeFaster</h1>
+            <h3 class="comment">Improve your typing speed</h3>
+    </header>
+    
+    <main>
+      
+        <div class="menu-container">
+            <div class="menu">
+                 <a href="type.html" id="play-link"><div id="play" >PLAY</div></a> 
+                <div id="ins">  INSTRUCTIONS </div><!--INstructions button-->
+                <div id="levels">DIFFICULTY</div> <!--Difficulty button-->
+                <div id="highScore">HIGH SCORE</div>
+
+            </div>
+        </div>
+    </main>
+    <p class="version"> 
+        developed by Osafo Divine Gyamfi
+    </p>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
